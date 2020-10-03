@@ -13,4 +13,7 @@ public interface ApiInterface {
 
     @GET("everything/")
     Call<String> getAllNews(@QueryMap HashMap<String, Object> queries);
+
+    @GET("top-headlines/")
+    Call<String> getAllSources(@QueryMap HashMap<String,Object> queries);
 }
